@@ -2,6 +2,8 @@
 # the following line to use "http://" instead
 source 'https://rubygems.org'
 
+ruby "2.2.2"
+
 gem "middleman", "~>3.4.0"
 
 # Live-reloading plugin
@@ -18,3 +20,6 @@ gem "middleman-cdn"
 
 # For making favicons
 gem "middleman-favicon-maker", "~> 3.7"
+
+# For Dokku to deploy
+gem 'rack-contrib', '~> 1.1.0'
