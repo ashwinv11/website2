@@ -12,3 +12,9 @@ gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
 
 # Windows does not come with time zone data
 gem "tzinfo-data", platforms: [:mswin, :mingw, :jruby]
+
+# For Cloudflare CDN
+gem "middleman-cdn"
+
+# For making favicons
+gem "middleman-favicon-maker", "~> 3.7"

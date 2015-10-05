@@ -1,17 +1,16 @@
 @charset "utf-8";
 
 body {
-  background: #ffffff;
+  background: #FAFAFA;
   text-align: center;
   font-family: sans-serif; }
 
 h1 {
-  color: rgba(0, 0, 0, .3);
+  color: rgb(0, 0, 0);
   font-weight: bold;
   font-size: 32px;
   letter-spacing: -1px;
   text-transform: uppercase;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
   background: url("../images/under_construction.gif") no-repeat center 50px;
   padding: 350px 0 10px;
   margin: 0; }
@@ -30,10 +29,6 @@ h1 {
     color: rgba(0, 0, 0, 0.3); }
     .doc a:hover {
       color: #666; }
-
-.welcome {
-  -webkit-animation-name: welcome;
-  -webkit-animation-duration: .9s; }
 
 @-webkit-keyframes welcome {
   from {

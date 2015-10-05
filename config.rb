@@ -55,6 +55,27 @@ set :images_dir, 'images'
 
 # Build-specific configuration
 configure :build do
+  activate :minify_css
+  activate :minify_javascript
+
+
+
+  # Append a hash to asset urls (make sure to use the url helpers)
+  activate :asset_hash
+
+  activate :cdn do |cdn|
+    cdn.cloudflare = {
+      client_api_key: ENV['CLOUDFLARE_CLIENT_API_KEY'],
+      email: ENV['CLOUDFLARE_EMAIL'],
+      zone: 'ashwinvaswani.com',
+      base_urls: [
+        'http://ashwinvaswani.com',
+        'https://ashwinvaswani.com',
+      ]
+    }
+    cdn.filter            = /\.html/i # default /.*/
+    cdn.after_build       = true      # default is false
+  end
   # For example, change the Compass output style for deployment
   # activate :minify_css
 
