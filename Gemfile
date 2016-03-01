@@ -4,22 +4,21 @@ source 'https://rubygems.org'
 
 ruby "2.2.2"
 
-gem "middleman", "~>3.4.0"
+gem 'middleman' #, '~> 4.1', '>= 4.1.2' , "~>3.4.0"
 
 # Live-reloading plugin
-gem "middleman-livereload", "~> 3.1.0"
-
-# For faster file watcher updates on Windows:
-gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
-
-# Windows does not come with time zone data
-gem "tzinfo-data", platforms: [:mswin, :mingw, :jruby]
+gem 'middleman-livereload' #, '~> 3.4', '>= 3.4.6' , "~> 3.1.0"
 
 # For Cloudflare CDN
 gem "middleman-cdn"
 
 # For making favicons
-gem "middleman-favicon-maker", "~> 3.7"
+gem 'middleman-favicon-maker' #, '~> 4.0', '>= 4.0.3' #, "~> 3.7"
 
 # For Dokku to deploy
-gem 'rack-contrib', '~> 1.1.0'
+gem 'rack-contrib' #, '~> 1.1.0'
+
+# Thoughtbot Frontend styling
+gem 'bitters'
+gem 'bourbon'
+gem 'neat'
