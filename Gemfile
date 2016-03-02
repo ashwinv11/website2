@@ -16,7 +16,7 @@ gem "middleman-cdn"
 gem 'middleman-favicon-maker' #, '~> 4.0', '>= 4.0.3' #, "~> 3.7"
 
 # For Dokku to deploy
-gem 'rack-contrib' #, '~> 1.1.0'
+gem 'rack-contrib', '~> 1.1.0'
 
 # Thoughtbot Frontend styling
 gem 'bitters'
