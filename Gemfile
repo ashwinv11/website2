@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 
 ruby "2.2.2"
 
+# Middleman
 gem 'middleman' #, '~> 4.1', '>= 4.1.2' , "~>3.4.0"
 
 # Live-reloading plugin
@@ -18,7 +19,7 @@ gem 'middleman-favicon-maker' #, '~> 4.0', '>= 4.0.3' #, "~> 3.7"
 # For Dokku to deploy
 gem 'rack-contrib', '~> 1.1.0'
 
-# Thoughtbot Frontend styling
+# Thoughtbot frontend styling
 gem 'bitters'
 gem 'bourbon'
 gem 'neat'

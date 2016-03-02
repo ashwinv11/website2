@@ -173,7 +173,6 @@ GEM
       fog-core
       nokogiri (~> 1.5, >= 1.5.11)
     formatador (0.2.5)
-    git-version-bump (0.15.1)
     haml (4.0.7)
       tilt
     hike (1.2.3)
@@ -259,9 +258,8 @@ GEM
     padrino-support (0.12.5)
       activesupport (>= 3.1)
     rack (1.6.4)
-    rack-contrib (1.4.0)
-      git-version-bump (~> 0.15)
-      rack (~> 1.4)
+    rack-contrib (1.1.0)
+      rack (>= 0.9.1)
     rack-livereload (0.3.16)
       rack
     rack-test (0.6.3)
@@ -314,7 +312,7 @@ DEPENDENCIES
   middleman-favicon-maker
   middleman-livereload
   neat
-  rack-contrib
+  rack-contrib (~> 1.1.0)
 
 BUNDLED WITH
    1.10.6
