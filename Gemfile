@@ -1,22 +1,20 @@
-# If you do not have OpenSSL installed, update
-# the following line to use "http://" instead
+# If you do not have OpenSSL installed, change
+# the following line to use 'http://'
 source 'https://rubygems.org'
 
-ruby "2.2.2"
+# For faster file watcher updates on Windows:
+gem 'wdm', '~> 0.1.0', platforms: [:mswin, :mingw]
 
-gem 'middleman' #, '~> 4.1', '>= 4.1.2' , "~>3.4.0"
+# Windows does not come with time zone data
+gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 
-# Live-reloading plugin
-gem 'middleman-livereload' #, '~> 3.4', '>= 3.4.6' , "~> 3.1.0"
+# Middleman Gems
+gem 'middleman-compass', '>= 4.0.0'
+gem 'middleman', '>= 4.0.0'
+gem 'middleman-livereload'
 
-# For Cloudflare CDN
-gem "middleman-cdn"
-
-# For making favicons
-gem 'middleman-favicon-maker' #, '~> 4.0', '>= 4.0.3' #, "~> 3.7"
-
-# For Dokku to deploy
-gem 'rack-contrib' #, '~> 1.1.0'
+# For Dokku support
+gem 'rack-contrib'
 
 # Thoughtbot Frontend styling
 gem 'bitters'

@@ -1,0 +1,13 @@
+nav {
+  border-bottom: 1px solid $base-border-color;
+  margin-bottom: 35px;
+
+  ul {
+    display: inline-block;
+    margin-bottom: em(10);
+  }
+
+  li{
+    display: inline-block;
+  }
+}
