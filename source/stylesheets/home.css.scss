@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+@import "bourbon";
+@import "base/base";   /* Bitters needs to be imported before Neat */
+@import "neat";
+@import "partials/layout";
+@import "partials/nav";
+@import "partials/footer";
+
+@mixin centerer {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#avatar{
+  width: 20%;
+}
+
+.centered{
+  //@include span-columns(8);
+}

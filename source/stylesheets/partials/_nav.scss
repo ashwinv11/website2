@@ -1,13 +1,24 @@
-nav {
-  border-bottom: 1px solid $base-border-color;
-  margin-bottom: 35px;
+#nav-container{
+  //@include span-columns(2);
+  width: 100%;
+  height: auto;
+  background: #213D30;
 
-  ul {
-    display: inline-block;
-    margin-bottom: em(10);
-  }
+  nav {
+    border-bottom: 1px solid $base-border-color;
+    margin-bottom: 35px;
+    text-align: center;
 
-  li{
-    display: inline-block;
+    ul {
+      display: inline-block;
+      margin-bottom: em(10);
+    }
+
+    li{
+      display: inline-block;
+      font-size: 32px;
+      margin: 10px 20px 0px 20px; //top, right, bottom, left
+      font-family: $heading-font-family;
+    }
   }
 }
