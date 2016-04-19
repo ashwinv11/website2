@@ -4,11 +4,11 @@ Repository for [ashwinvaswani.com](https://ashwinvaswani.com). Please don't hack
 
 ## Installation
 
-This site runs on [Middleman](https://middlemanapp.com/). Follow the install guide found here: [https://middlemanapp.com/basics/install/]
+This site runs on [Middleman](https://middlemanapp.com/). Follow the install guide found here: https://middlemanapp.com/basics/install/
 
 ## MIT License
 
-Copyright (c) [2016] [Ashwin Vaswani]
+Copyright (c) 2016 Ashwin Vaswani
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
