@@ -29,10 +29,12 @@
     <title><%= current_page.data.title || "Ashwin Vaswani" %></title>
 
     <!-- Google Web Fonts Fira Mono & Fira Sans -->
-    <link href='https://fonts.googleapis.com/css?family=Fira+Mono|Fira+Sans:500' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Fira+Mono|Fira+Sans:300' rel='stylesheet' type='text/css'>
 
     <%= stylesheet_link_tag "home" %>
     <%= javascript_include_tag :all %>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.23/p5.js"></script>
+    <%= javascript_include_tag "homep5" %>
   </head>
 
   <body class="<%= page_classes %>">

@@ -22,9 +22,10 @@ $base-z-index: 0;
 // Colors
 $blue: #1565c0;
 $dark-red: #D13737;
-$dark-gray: #333;
+$dark-gray: #292929;
 $medium-gray: #999;
 $light-gray: #ddd;
+$off-white: #F2F2F2;
 
 // Font Colors
 $base-font-color: $dark-gray;
@@ -35,7 +36,7 @@ $base-border-color: $light-gray;
 $base-border: 1px solid $base-border-color;
 
 // Background Colors
-$base-background-color: #fff;
+$base-background-color: $off-white;
 $secondary-background-color: tint($base-border-color, 75%);
 
 // Forms
@@ -45,3 +46,7 @@ $form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $l
 // Animations
 $base-duration: 150ms;
 $base-timing: ease;
+
+// Breakpoints
+$mobile: new-breakpoint(max-width 500px 4);
+$tablet: new-breakpoint(max-width 800px 4);

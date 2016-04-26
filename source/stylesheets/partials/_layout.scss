@@ -1,3 +1,8 @@
+body {
+  margin: 0px 0px 0px 0px;
+  background: $base-background-color;
+}
+
 #main {
-    @include outer-container;
+  @include outer-container;
 }

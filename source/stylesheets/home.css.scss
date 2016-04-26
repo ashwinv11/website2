@@ -14,10 +14,23 @@
   transform: translate(-50%, -50%);
 }
 
-#avatar{
-  width: 20%;
+.intro {
+  @include span-columns(12);
+  padding: 20px;
 }
 
-.centered{
-  //text-align: center;
+#p5 { 
+  @include span-columns(4);
+  @include media($tablet) {
+    @include span-columns(1);
+  }
+}
+
+.about-text { 
+  @include span-columns(8);
+  padding: 45px; 
+  @include media($tablet) {
+    @include span-columns(1);
+    color: $dark-red;
+  }
 }

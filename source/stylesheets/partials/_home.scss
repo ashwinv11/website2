@@ -1,4 +1,8 @@
-#avatar{
-  width: 180px;
-  height: auto;
+body {
+  margin: 0px 0px 0px 0px;
+  background: $base-background-color;
+}
+
+#main {
+  @include outer-container;
 }
