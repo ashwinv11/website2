@@ -7,30 +7,27 @@
 @import "partials/nav";
 @import "partials/footer";
 
-@mixin centerer {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+// Selected Page Top Nav
+nav ul li:nth-child(1) span a {
+  color: $light-gray;
 }
 
 .intro {
   @include span-columns(12);
-  padding: 20px;
+  padding: 20px 20px;
 }
 
 #p5 { 
   @include span-columns(4);
-  @include media($tablet) {
-    @include span-columns(1);
+  @include media($laptop) {
+    @include span-columns(2);
   }
 }
 
 .about-text { 
   @include span-columns(8);
   padding: 45px; 
-  @include media($tablet) {
-    @include span-columns(1);
-    color: $dark-red;
+  @include media($laptop) {
+    @include span-columns(2);
   }
 }

@@ -3,10 +3,10 @@ var frameCount;
 var colorSwitch;
 
 function setup() {
-  var myCanvas = createCanvas(400, 400);
+  var myCanvas = createCanvas(380, 380);
   myCanvas.parent('p5');
-  //myCanvas.mousePressed(resetDraw);
-  myCanvas.touchEnded(resetDraw);
+  myCanvas.mousePressed(resetDraw);
+  //myCanvas.touchEnded(resetDraw);
   background(242, 242, 242);
   stroke(209, 55, 55, 25);
   noFill();

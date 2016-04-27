@@ -1,62 +1,58 @@
-#nav-container{
+nav {
   @include span-columns(12);
   background: $dark-gray;
+  border-bottom: 1px solid $base-border-color;
+  padding-bottom: 10px;
+  text-align: center;
 
-  nav {
-    border-bottom: 1px solid $base-border-color;
-    padding-bottom: 10px;
-    text-align: center;
+  ul {
+    list-style: none;
+    display: inline-block;
+    padding-bottom: em(10);
+  }
 
-    ul {
-      list-style: none;
-      display: inline-block;
-      padding-bottom: em(10);
-    }
+  li {
+    display: inline-block;
+    font-size: 32px;
+    margin: 10px 20px 0px 20px; //top, right, bottom, left
+    font-family: $heading-font-family;
+    letter-spacing: 2px;
+  }
 
-    li {
-      display: inline-block;
-      font-size: 32px;
-      margin: 10px 20px 0px 20px; //top, right, bottom, left
-      font-family: $heading-font-family;
-      letter-spacing: 5px;
-    }
+  span {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    color: $light-gray;
+  }
 
-    span {
-      position: relative;
-      display: block;
-      cursor: pointer;
-      color: $light-gray;
-    }
+  span:before, span:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    top: 50%;
+    background: $off-white;
+  }
 
-    span:before, span:after {
-      content: '';
-      position: absolute;
-      width: 0%;
-      height: 1px;
-      top: 50%;
-      margin-top: -3px;
-      background: $light-gray;
-    }
+  span:before {
+    left: -1px;
+  }
+  span:after {
+    right: 1px;
+    background: $off-white;
+    transition: width 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
 
-    span:before {
-      left: -2.5px;
-    }
-    span:after {
-      right: 2.5px;
-      background: $light-gray;
-      transition: width 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
-    }
+  span:hover:before {
+    background: $off-white;
+    width: 100%;
+    transition: width 0.6s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
 
-    span:hover:before {
-      background: $light-gray;
-      width: 100%;
-      transition: width 0.6s cubic-bezier(0.22, 0.61, 0.36, 1);
-    }
-
-    span:hover:after {
-      background: transparent;
-      width: 100%;
-      transition: 0s;
-    }
+  span:hover:after {
+    background: transparent;
+    width: 100%;
+    transition: 0s;
   }
 }

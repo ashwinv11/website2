@@ -5,6 +5,11 @@
 # Per-page layout changes:
 #
 # With no layout
+set :css_dir, 'stylesheets'
+set :fonts_dir,  "fonts"
+set :js_dir, 'javascripts'
+set :images_dir, 'images'
+
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
