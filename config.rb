@@ -27,14 +27,9 @@ page '/*.txt', layout: false
 # General configuration
 
 # Reload the browser automatically whenever files change
-configure :development do
-  activate :livereload
-end
-
-# Does this even do anything?
-configure :production do
-  deactivate :livereload
-end
+# configure :development do
+#   activate :livereload
+# end
 
 ###
 # Helpers
@@ -49,11 +44,6 @@ end
 
 # Build-specific configuration
 configure :build do
-   # Minify CSS on build
-  # activate :minify_css
-
-  # Minify Javascript on build
-  # activate :minify_javascript
   # Hash assets
   # activate :asset_hash
 
