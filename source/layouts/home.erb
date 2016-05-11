@@ -37,9 +37,9 @@
     <!-- p5.js-->
     <script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.23/p5.js"></script>
     
-    <%= stylesheet_link_tag "home" %>
-    <%= javascript_include_tag :all %>
-    <%= javascript_include_tag "homep5" %>
+    <%= stylesheet_link_tag "home" , :async => true %>
+    <%= javascript_include_tag :all , :async => true %>
+    <%= javascript_include_tag "homep5",:async => true %>
   </head>
 
   <body class="<%= page_classes %>">

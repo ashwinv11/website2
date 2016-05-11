@@ -13,5 +13,11 @@ form {
   font-size: 26px;
   div {
     margin: 150px auto; 
+
+    a {
+      h1{
+        text-decoration: underline;
+      }
+    }
   }
 }

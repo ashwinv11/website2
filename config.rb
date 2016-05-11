@@ -2,6 +2,9 @@
 # Page options, layouts, aliases and proxies
 ###
 
+require 'tzinfo'
+Time.zone = "America/Los_Angeles"
+
 # Per-page layout changes:
 #
 # With no layout
@@ -30,6 +33,16 @@ page '/*.txt', layout: false
 # configure :development do
 #   activate :livereload
 # end
+
+activate :blog do |blog|
+  blog.permalink = "projects/{title}.html"
+  blog.sources = "articles/:title.html"
+
+  blog.default_extension = ".erb"
+  # blog.paginate = true
+  # blog.per_page = 10
+  # blog.page_link = "page/{num}"
+end
 
 ###
 # Helpers
