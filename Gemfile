@@ -5,7 +5,7 @@ source 'https://rubygems.org'
 # Middleman Gems
 gem 'middleman-compass', '>= 4.0.0'
 gem 'middleman', '>= 4.0.0'
-# gem 'middleman-livereload'
+gem 'middleman-livereload'
 
 # For Dokku support
 gem 'rack-contrib'
