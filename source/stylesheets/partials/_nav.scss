@@ -35,22 +35,22 @@ nav {
     background: $off-white;
   }
 
-  span:before {
+  span:after {
     left: -1px;
   }
-  span:after {
+  span:before {
     right: 1px;
     background: $off-white;
     transition: width 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
   }
 
-  span:hover:before {
+  span:hover:after {
     background: $off-white;
     width: 100%;
     transition: width 0.6s cubic-bezier(0.22, 0.61, 0.36, 1);
   }
 
-  span:hover:after {
+  span:hover:before {
     background: transparent;
     width: 100%;
     transition: 0s;
