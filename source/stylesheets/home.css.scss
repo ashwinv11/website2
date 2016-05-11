@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+@import "bourbon";
+@import "base/base";   /* Bitters needs to be imported before Neat */
+@import "neat";
+@import "partials/layout";
+@import "partials/nav";
+@import "partials/footer";
+
+// Selected Page Top Nav
+nav ul li:nth-child(1) span a {
+  color: $light-gray;
+}
+
+.intro {
+  @include span-columns(12);
+  padding: 60px 20px;
+}
+
+#p5{
+  align-self: flex-end;
+}
+
+.about-text{
+  padding: 0px 40px 0px 0px;
+}
+
+@media (max-width: 668px) {
+
+  .about-text {
+    padding: 0px 20px 20px 20px;
+  }
+
+  #p5{
+    align-self: center;
+  }
+}
+
+.flex-boxes {
+  @include clearfix;
+  @include span-columns(12);
+  align-items: stretch;
+  clear: both;
+  display: flex;
+  flex-wrap: wrap;
+
+  .flex-box {
+    align-self: stretch;
+    display: block;
+    flex: 2 2 18em;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+  }
+}

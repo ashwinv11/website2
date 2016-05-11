@@ -4,7 +4,7 @@ $large-screen: 900px;
 
 // Typography
 $base-font-family: 'Fira Mono'; //$font-stack-system
-$heading-font-family: $base-font-family; //$base-font-family
+$heading-font-family: 'Fira Sans'; //$base-font-family
 
 // Font Sizes
 $base-font-size: 1em;
@@ -27,14 +27,19 @@ $light-gray: #ddd;
 
 // Font Colors
 $base-font-color: $dark-gray;
-$action-color: $blue;
+$action-color: $dark-red;
+$dark-red: #D13737;
+$dark-gray: #292929;
+$medium-gray: #999;
+$light-gray: #ddd;
+$off-white: #F2F2F2;
 
 // Border
 $base-border-color: $light-gray;
 $base-border: 1px solid $base-border-color;
 
 // Background Colors
-$base-background-color: #fff;
+$base-background-color: $off-white;
 $secondary-background-color: tint($base-border-color, 75%);
 
 // Forms
@@ -44,3 +49,16 @@ $form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $l
 // Animations
 $base-duration: 150ms;
 $base-timing: ease;
+
+/*
+
+// Breakpoints
+$four-k: new-breakpoint(max-width 2560px 4);
+$laptop-l: new-breakpoint(max-width 1440px 4);
+$laptop: new-breakpoint(max-width 1024px 4);
+$tablet: new-breakpoint(max-width 768px 4);
+$mobile-l: new-breakpoint(max-width 425px 4);
+$mobile-m: new-breakpoint(max-width 375px 4);
+$mobile-s: new-breakpoint(max-width 320px 4);
+
+*/
