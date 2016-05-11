@@ -28,6 +28,11 @@ configure :development do
   activate :livereload
 end
 
+# Does this even do anything?
+configure :production do
+  deactivate :livereload
+end
+
 ###
 # Helpers
 ###
@@ -41,7 +46,6 @@ end
 
 # Build-specific configuration
 configure :build do
-
   # Hash assets
   activate :asset_hash
 
