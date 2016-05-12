@@ -60,9 +60,15 @@ configure :build do
   # Hash assets
   # activate :asset_hash
 
+  # Zip it
+  activate :gzip
+
   # Minify CSS on build
   activate :minify_css
 
   # Minify Javascript on build
   activate :minify_javascript
+  
+  # Minify HTML on build
+  activate :minify_html
 end
