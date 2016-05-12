@@ -7,6 +7,10 @@
 @import "partials/nav";
 @import "partials/footer";
 
+nav ul li:nth-child(4) span a {
+  color: $light-gray;
+}
+
 form {
   @include span-columns(12);
   text-align: center;

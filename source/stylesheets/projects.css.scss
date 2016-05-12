@@ -7,6 +7,10 @@
 @import "partials/nav";
 @import "partials/footer";
 
+nav ul li:nth-child(3) span a {
+  color: $light-gray;
+}
+
 .full-width{
   width: 100%;
 }
