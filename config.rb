@@ -13,6 +13,7 @@ page '/*.json', layout: false
 page '/*.txt', layout: false
 
 activate :directory_indexes
+set :haml, { :ugly => true, :format => :html5 }
 
 # With alternative layout
 # page "/path/to/file.html", layout: :otherlayout
@@ -40,7 +41,7 @@ activate :blog do |blog|
   blog.permalink = "projects/{title}.html"
   blog.sources = "articles/:title.html"
 
-  blog.default_extension = ".erb"
+  blog.default_extension = ".haml"
   # blog.paginate = true
   # blog.per_page = 10
   # blog.page_link = "page/{num}"
