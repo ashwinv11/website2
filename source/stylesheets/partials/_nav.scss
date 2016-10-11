@@ -6,15 +6,20 @@ nav {
   text-align: center;
 
   ul {
+    @include span-columns(1);
     list-style: none;
     display: inline-block;
     padding-bottom: em(10);
+
+    @media #{$grid-sm-plus}{
+      @include span-columns(12);
+    }
   }
 
   li {
     display: inline-block;
     font-size: 32px;
-    margin: 10px 20px 0px 20px; //top, right, bottom, left
+    margin: 10px 20px 0px 20px;
     font-family: $heading-font-family;
     letter-spacing: 2px;
   }
@@ -24,6 +29,11 @@ nav {
     display: block;
     cursor: pointer;
     color: $light-gray;
+    font-size: 0.8em;
+
+    @media #{$grid-xs-plus}{
+      font-size: 1em;
+    }
   }
 
   span:before, span:after {

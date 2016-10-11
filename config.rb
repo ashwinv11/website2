@@ -39,7 +39,7 @@ set :haml, { :ugly => true, :format => :html5 }
 
 activate :blog do |blog|
   blog.permalink = "projects/{title}.html"
-  blog.sources = "articles/:title.html"
+  blog.sources = "posts/:title.html"
 
   blog.default_extension = ".haml"
   # blog.paginate = true

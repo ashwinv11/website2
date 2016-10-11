@@ -1,10 +1,10 @@
 ## Synopsis
 
-Repository for [ashwinvaswani.com](https://ashwinvaswani.com). Please don't hack me :)
+Repository for [ashwinvaswani.com](https://ashwinvaswani.com).
 
 ## Installation
 
-This site runs on [Middleman](https://middlemanapp.com/). Follow the install guide found here: https://middlemanapp.com/basics/install/
+This site runs on [Middleman](https://middlemanapp.com/). Follow the install guide found [here](https://middlemanapp.com/basics/install/). 
 
 ## MIT License
 

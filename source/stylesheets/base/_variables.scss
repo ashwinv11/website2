@@ -1,13 +1,15 @@
-// Breakpoints
-$medium-screen: 600px;
-$large-screen: 900px;
+/////////////////
+// LAYOUT
+///////////////
+
+
 
 // Typography
-$base-font-family: 'Fira Mono'; //$font-stack-system
-$heading-font-family: 'Fira Sans'; //$base-font-family
+$base-font-family: 'Fira Mono';
+$heading-font-family: 'Fira Sans';
 
 // Font Sizes
-$base-font-size: 1em;
+$base-font-size: 1.2em;
 
 // Line height
 $base-line-height: 1.5;
@@ -18,6 +20,7 @@ $base-border-radius: 3px;
 $base-spacing: $base-line-height * 1em;
 $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
+$heading-letter-spacing: 0.02em;
 
 // Colors
 $blue: #1565c0;
@@ -51,15 +54,43 @@ $form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $l
 $base-duration: 150ms;
 $base-timing: ease;
 
-/*
+/////////////////
+// BREAKPOINTS
+///////////////
+$screen-xs-min : 320px;
+$screen-sm-min : 768px;
+$screen-md-min : 992px;
+$screen-lg-min : 1200px;
+$screen-xl-min : 1440px;
+$screen-xs-max : ($screen-sm-min - 1);
+$screen-sm-max : ($screen-md-min - 1);
+$screen-md-max : ($screen-lg-min - 1);
+$screen-lg-max : ($screen-xl-min - 1);
 
-// Breakpoints
-$four-k: new-breakpoint(max-width 2560px 4);
-$laptop-l: new-breakpoint(max-width 1440px 4);
-$laptop: new-breakpoint(max-width 1024px 4);
-$tablet: new-breakpoint(max-width 768px 4);
-$mobile-l: new-breakpoint(max-width 425px 4);
-$mobile-m: new-breakpoint(max-width 375px 4);
-$mobile-s: new-breakpoint(max-width 320px 4);
+// Specifies xs ( aka mobile ) grid
+$grid-xs: "(min-width: " + $screen-xs-min + ") and (max-width: " + $screen-sm-min + ")";
 
-*/
+// Specifies xs ( aka mobile ) grid and all grid sizes above
+$grid-xs-plus: "(min-width: " + $screen-xs-min + ")";
+
+// Specifies sm ( aka tablet ) grid
+$grid-sm: "(min-width: " + $screen-sm-min + ") and (max-width: " + $screen-sm-max + ")";
+
+// Specifies sm ( aka tablet ) grid and all grid sizes above
+$grid-sm-plus: "(min-width: " + $screen-sm-min + ")";
+
+// Specifies md grid ( aka laptop )
+$grid-md: "(min-width: " + $screen-md-min + ") and (max-width: " + $screen-md-max + ")";
+
+// Specifies md grid ( aka laptop ) and all grid sizes above
+$grid-md-plus: "(min-width: " + $screen-md-min + ")";
+
+// Specifies md grid ( aka laptop ) and all grid sizes below
+$grid-md-minus: "(max-width: " + $screen-md-max + ")";
+
+// Specifies lg grid ( aka desktop )
+$grid-lg: "(min-width: " + $screen-lg-min + ")";
+
+// Specifies xl grid ( aka for extreme use )
+$grid-xl: "(min-width: " + $screen-xl-min + ")";
+

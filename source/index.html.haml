@@ -3,23 +3,28 @@ title: Ashwin Vaswani - Home
 layout: home
 ---
 
-.intro
-  %h1 Hi, I'm Ashwin!
-  %p
-    Web Engineer at
-    = succeed "," do
-      = link_to 'Kadenze', "https://kadenze.com", target: "_blank"
-    with a BFA from 
-    = link_to 'CalArts', "https://calarts.edu", target: "_blank"
-    in 
-    = link_to 'Music Technology', "http://mtiid.calarts.edu", target: "_blank"
-    & the Digital Arts. Feel free to explore my website for my work, music, projects, and other random things. Oh also, this website is entirely open source, which you can find
-    = succeed "." do
-      = link_to 'here', "https://github.com/ashwinv11/website", target: "_blank"
+#main-wrapper
+  .row
+    .intro
+      %h1 Hi, I'm Ashwin!
+      %p
+        Web Engineer at
+        = succeed "," do
+          = link_to 'Kadenze', "https://kadenze.com", target: "_blank"
+        with a BFA from 
+        = link_to 'CalArts', "https://calarts.edu", target: "_blank"
+        in 
+        = link_to 'Music Technology', "http://mtiid.calarts.edu", target: "_blank"
+        & the Digital Arts. Feel free to explore my website for my work, music, projects, and other random things. Oh also, this website is entirely open source, which you can find
+        = succeed "." do
+          = link_to 'here', "https://github.com/ashwinv11/website", target: "_blank"
 
-.flex-boxes
-  #p5.flex-box
-  .about-text.flex-box
-    %h1 About
-    %p
-      Ashwin Vaswani is a creative coder. His work focus on web art, web apps, & digital art. He produces art in the form of code, electronic music with voice, & photography. Interested in connecting ‘the internet of things’ to modern art forms, Ashwin tries to find the balance between user experience & artistic representation. Proficient in modern web languages such as Ruby, PHP, & JavaScript his goal is to become a web developer who can find the balance between art & reachability. He supports open source software, privacy, & net neutrality. Currently, he is interested in tasteful data visualization using the web.
+  .row
+    #p5
+    .about-1
+      %h1 About
+      %p
+        Ashwin Vaswani is a creative coder. His work focus on web art, web apps, & digital art. He produces art in the form of code, electronic music with voice, & photography. Interested in connecting ‘the internet of things’ to modern art forms, Ashwin tries to find the balance between user experience & artistic representation. 
+  .row
+    %p.about-2
+      Proficient in modern web languages such as Ruby, PHP, & JavaScript his goal is to become a web developer who can find the balance between art & reachability. He supports open source software, privacy, & net neutrality. Currently, he is interested in tasteful data visualization using the web.
