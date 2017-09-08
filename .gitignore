@@ -19,3 +19,6 @@
 
 # Ignore rvm config
 .rvmrc
+
+# Ignore node dependencies folder
+/node_modules
