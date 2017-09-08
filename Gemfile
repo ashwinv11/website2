@@ -3,16 +3,7 @@
 source 'https://rubygems.org'
 
 # Middleman Gems
-gem 'middleman-compass', '>= 4.0.0'
-gem 'middleman', '>= 4.0.0'
+gem 'middleman'
 gem 'middleman-livereload'
 gem 'middleman-blog'
 gem 'middleman-minify-html'
-
-# For Dokku support
-gem 'rack-contrib'
-
-# Thoughtbot Frontend styling
-gem 'bitters'
-gem 'bourbon'
-gem 'neat'

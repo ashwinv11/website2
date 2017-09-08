@@ -4,6 +4,7 @@
 
 require 'tzinfo'
 Time.zone = "America/Los_Angeles"
+Haml::TempleEngine.disable_option_validator!
 
 # Per-page layout changes:
 #
@@ -71,7 +72,7 @@ configure :build do
 
   # Minify Javascript on build
   activate :minify_javascript
-  
+
   # Minify HTML on build
   activate :minify_html
 end
