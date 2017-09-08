@@ -16,6 +16,17 @@ page '/*.txt', layout: false
 activate :directory_indexes
 set :haml, { :ugly => true, :format => :html5 }
 
+# Webpack asset pipeline
+activate :external_pipeline,
+         name: :webpack,
+         command: build? ? "./node_modules/webpack/bin/webpack.js --bail -p" : "./node_modules/webpack/bin/webpack.js --watch -d --progress --color",
+         source: ".tmp/dist",
+         latency: 1
+
+set :css_dir, 'assets/stylesheets'
+set :js_dir, 'assets/javascript'
+set :images_dir, 'assets/images'
+
 # With alternative layout
 # page "/path/to/file.html", layout: :otherlayout
 
@@ -40,7 +51,7 @@ set :haml, { :ugly => true, :format => :html5 }
 
 activate :blog do |blog|
   blog.permalink = "projects/{title}.html"
-  blog.sources = "articles/:title.html"
+  blog.sources = "posts/:title.html"
 
   blog.default_extension = ".haml"
   # blog.paginate = true
@@ -61,8 +72,11 @@ end
 
 # Build-specific configuration
 configure :build do
+  # Ignore asset building so Webpack has control
+  ignore { |path| path =~ /\/(.*)\.js|css|scss$/ }
+
   # Hash assets
-  # activate :asset_hash
+  activate :asset_hash
 
   # Zip it
   activate :gzip
