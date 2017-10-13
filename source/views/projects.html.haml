@@ -7,7 +7,8 @@ layout: projects
   %p
     Page #{page_number} of #{num_pages}
   - if prev_page
-    %p= link_to 'Previous page', prev_page
+    %p= link_to t("project.prev_page"), prev_page
+
 .flex-boxes
   - page_articles.each_with_index do |article, i|
     .flex-box
@@ -15,6 +16,7 @@ layout: projects
         = link_to article.title, article
         %span= article.date.strftime('%b %e, %Y')
       = article.body
+
 - if paginate
   - if next_page
-    %p= link_to 'Next page', next_page
+    %p= link_to t("project.next_page"), next_page

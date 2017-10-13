@@ -4,8 +4,6 @@ date: 2016-05-11 13:44 PDT
 tags: programming web
 ---
 
-= tag :img, :src => "/assets/images/dae-2016.png", :class => "static-img"
+= tag :img, src: "/assets/images/dae-2016.png", class: "static-img"
 
-%p
-  I also leaded development on the website for CalArts' Digital Arts Expo for 2016. This was also created in Wordpress. Check it out 
-  %a{:href => "http://expo16.calartsmusictech.com", :target => "_blank"}here.
+%p=t("project.dae16.about", href: link_to(t("common.here"), "http://expo16.calartsmusictech.com", target: "_blank"))

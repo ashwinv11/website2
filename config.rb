@@ -49,8 +49,9 @@ set :images_dir, 'assets/images'
 # end
 
 activate :blog do |blog|
-  blog.permalink = "views/projects/{title}.html"
   blog.sources = "views/posts/:title.html"
+  blog.prefix = "projects"
+  blog.permalink = "{title}.html"
 
   blog.default_extension = ".haml"
   # blog.paginate = true

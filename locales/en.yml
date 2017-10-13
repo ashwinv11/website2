@@ -1,12 +1,18 @@
 ---
 en:
+  common:
+    here: here
+  nav:
+    home: home
+    resume: resume
+    projects: projects
+    contact: contact
   index:
     heading: Hi, I'm Ashwin!
     job_title: Web Engineer
     company: Kadenze
     undergrad: CalArts
     metier: Music Technology
-    here: here
     bio: |
       %{job_title} at %{href_company}, with a BFA from %{href_undergrad} in %{href_metier} & the Digital Arts.
       Feel free to explore my website for my work, music, projects, and other random things.
@@ -21,3 +27,42 @@ en:
       his goal is to become a web developer who can find the balance between art & reachability.
       He supports open source software, privacy, & net neutrality.
       Currently, he is interested in tasteful data visualization using the web.
+  project:
+    next_page: Next Page
+    previous_page: Previous Page
+    aries_music:
+      lead_line: "Want to here all the collabs and songs I’ve done? Check out this Soundcloud playlist:"
+    dae15:
+      about: |
+        I created the website for CalArts' Digital Arts Expo for 2015.
+        Since other people had to add content to the site, I created it in Wordpress.
+        The website has been archived %{href}, but I am working with the school's IT department
+        to get it up and running.
+    dae16:
+      about: |
+        I also leaded development on the website for CalArts' Digital Arts Expo for 2016.
+        This was also created in Wordpress. Check it out %{href}.
+    censored:
+      intro: |
+        Censored is an interactive website that visualizes statistics on sexual assault and rape cases in India.
+        The data is taken from the Open Government Data Platform of India, which is used by the
+        Government of India to publish their datasets for public use. Although this is a step in the right
+        direction, these numbers are only reported cases till the year 2013. Most cases aren't reported.
+        Many cases are buried under bureaucracy and corruption. In Maharashtra alone, the number of reported
+        cases has <strong>more than doubled</strong> in just 4 years. Today’s numbers are unknown,
+        but we can only imagine what they are.
+      repo: |
+        The animations in this video are slowed down due to the screen recording.
+        The website is still under  development and I intend on bring more features and data available
+        to the public. Source code can be found %{href}.
+      paper: |
+        I also wrote an extensive paper that talks about the background behind the project and the implementation.
+        Check that out %{href}.
+    digital_reflections:
+      about: |
+        Digital Reflections is an interactive mixed reality piece. You see yourself in the mirror,
+        but you also see a digital representation of yourself. This breaks down the dichotomy between
+        the physical and digital world, creating another reality. Wave your hands and make some noise
+        to see your reflection change.
+  footer:
+    copyright: Copyright 2017 Ashwin Vaswani

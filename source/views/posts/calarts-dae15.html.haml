@@ -4,7 +4,6 @@ date: 2016-05-11 13:21 PDT
 tags: programming web
 ---
 
-= tag :img, :src => "/assets/images/dae-2015.png", :class => "static-img"
+= tag :img, src: "/assets/images/dae-2015.png", class: "static-img"
 
-%p
-  I created the website for CalArts' Digital Arts Expo for 2015. Since other people had to add content to the site, I created it in Wordpress. Unfortunately, the website has been archived, but I am working with the school's IT department to get it up and running.
+%p=t("project.dae15.about", href: link_to(t("common.here"), "http://expo15.calartsmusictech.com", target: "_blank"))
