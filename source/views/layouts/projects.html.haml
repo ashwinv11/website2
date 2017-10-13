@@ -1,37 +1,37 @@
 !!!
 %html
   %head
-    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}
-    %meta{:charset => "utf-8"}
-    %meta{:content => "width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no", :name => "viewport"}
+    %meta{content: "IE=edge", "http-equiv": "X-UA-Compatible"}
+    %meta{charset: "utf-8"}
+    %meta{content: "width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no", name: "viewport"}
     / BEGIN FAVICON
-    %link{:href => "/assets/favicons/apple-icon-57x57.png", :rel => "apple-touch-icon", :sizes => "57x57"}
-    %link{:href => "/assets/favicons/apple-icon-60x60.png", :rel => "apple-touch-icon", :sizes => "60x60"}
-    %link{:href => "/assets/favicons/apple-icon-72x72.png", :rel => "apple-touch-icon", :sizes => "72x72"}
-    %link{:href => "/assets/favicons/apple-icon-76x76.png", :rel => "apple-touch-icon", :sizes => "76x76"}
-    %link{:href => "/assets/favicons/apple-icon-114x114.png", :rel => "apple-touch-icon", :sizes => "114x114"}
-    %link{:href => "/assets/favicons/apple-icon-120x120.png", :rel => "apple-touch-icon", :sizes => "120x120"}
-    %link{:href => "/assets/favicons/apple-icon-144x144.png", :rel => "apple-touch-icon", :sizes => "144x144"}
-    %link{:href => "/assets/favicons/apple-icon-152x152.png", :rel => "apple-touch-icon", :sizes => "152x152"}
-    %link{:href => "/assets/favicons/apple-icon-180x180.png", :rel => "apple-touch-icon", :sizes => "180x180"}
-    %link{:href => "/assets/favicons/android-icon-192x192.png", :rel => "icon", :sizes => "192x192", :type => "image/png"}
-    %link{:href => "/assets/favicons/favicon-32x32.png", :rel => "icon", :sizes => "32x32", :type => "image/png"}
-    %link{:href => "/assets/favicons/favicon-96x96.png", :rel => "icon", :sizes => "96x96", :type => "image/png"}
-    %link{:href => "/assets/favicons/favicon-16x16.png", :rel => "icon", :sizes => "16x16", :type => "image/png"}
-    %link{:href => "/manifest.json", :rel => "manifest"}
-    %meta{:content => "#ffffff", :name => "msapplication-TileColor"}
-    %meta{:content => "/assets/favicons/ms-icon-144x144.png", :name => "msapplication-TileImage"}
-    %meta{:content => "#ffffff", :name => "theme-color"}
+    %link{href: "/assets/favicons/apple-icon-57x57.png", rel: "apple-touch-icon", sizes: "57x57"}
+    %link{href: "/assets/favicons/apple-icon-60x60.png", rel: "apple-touch-icon", sizes: "60x60"}
+    %link{href: "/assets/favicons/apple-icon-72x72.png", rel: "apple-touch-icon", sizes: "72x72"}
+    %link{href: "/assets/favicons/apple-icon-76x76.png", rel: "apple-touch-icon", sizes: "76x76"}
+    %link{href: "/assets/favicons/appl-icon-114x114.png", rel: "apple-touch-icon", sizes: "114x114"}
+    %link{href: "/assets/favicons/apple-icon-120x120.png", rel: "apple-touch-icon", sizes: "120x120"}
+    %link{href: "/assets/favicons/apple-icon-144x144.png", rel: "apple-touch-icon", sizes: "144x144"}
+    %link{href: "/assets/favicons/apple-icon-152x152.png", rel: "apple-touch-icon", sizes: "152x152"}
+    %link{href: "/assets/favicons/apple-icon-180x180.png", rel: "apple-touch-icon", sizes: "180x180"}
+    %link{href: "/assets/favicons/android-icon-192x192.png", rel: "icon", sizes: "192x192", type: "image/png"}
+    %link{href: "/assets/favicons/favicon-32x32.png", rel: "icon", sizes: "32x32", type: "image/png"}
+    %link{href: "/assets/favicons/favicon-96x96.png", rel: "icon", sizes: "96x96", type: "image/png"}
+    %link{href: "/assets/favicons/favicon-16x16.png", rel: "icon", sizes: "16x16", type: "image/png"}
+    %link{href: "/manifest.json", rel: "manifest"}
+    %meta{content: "#ffffff", name: "msapplication-TileColor"}
+    %meta{content: "/assets/favicons/ms-icon-144x144.png", name: "msapplication-TileImage"}
+    %meta{content: "#ffffff", name: "theme-color"}
     / END FAVICON
     / Use title if it's in the page YAML frontmatter
     %title= current_page.data.title || "Ashwin Vaswani"
     / Google Web Fonts Fira Mono & Fira Sans
-    %link{:href => "https://fonts.googleapis.com/css?family=Fira+Mono|Fira+Sans:300", :rel => "stylesheet", :type => "text/css"}
+    %link{href: "https://fonts.googleapis.com/css?family=Fira+Mono|Fira+Sans:300", rel: "stylesheet", type: "text/css"}
     / Font Awesome Icons
-    %link{:crossorigin => "anonymous", :href => "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css", :integrity => "sha384-hQpvDQiCJaD2H465dQfA717v7lu5qHWtDbWNPvaTJ0ID5xnPUlVXnKzq7b8YUkbN", :rel => "stylesheet"}
-    = javascript_include_tag 'all.bundle', :async => true
-  %body{:class => page_classes}
+    %link{crossorigin: "anonymous", href: "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css", integrity: "sha384-hQpvDQiCJaD2H465dQfA717v7lu5qHWtDbWNPvaTJ0ID5xnPUlVXnKzq7b8YUkbN", rel: "stylesheet"}
+    = javascript_include_tag 'all.bundle', async: true
+  %body{class: page_classes}
     = partial "partials/nav"
-    #main{:role => "main"}
+    #main{role: "main"}
       = yield
     = partial "partials/footer"
