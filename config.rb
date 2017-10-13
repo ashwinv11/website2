@@ -14,7 +14,10 @@ page '/*.json', layout: false
 page '/*.txt', layout: false
 
 activate :directory_indexes
-set :haml, { :ugly => true, :format => :html5 }
+set :haml, { ugly: true, format: :html5 }
+
+activate :i18n, templates_dir: "views"
+set :layouts_dir, 'views/layouts'
 
 # Webpack asset pipeline
 activate :external_pipeline,
@@ -26,6 +29,7 @@ activate :external_pipeline,
 set :css_dir, 'assets/stylesheets'
 set :js_dir, 'assets/javascripts'
 set :images_dir, 'assets/images'
+
 
 # With alternative layout
 # page "/path/to/file.html", layout: :otherlayout
@@ -45,8 +49,8 @@ set :images_dir, 'assets/images'
 # end
 
 activate :blog do |blog|
-  blog.permalink = "projects/{title}.html"
-  blog.sources = "posts/:title.html"
+  blog.permalink = "views/projects/{title}.html"
+  blog.sources = "views/posts/:title.html"
 
   blog.default_extension = ".haml"
   # blog.paginate = true

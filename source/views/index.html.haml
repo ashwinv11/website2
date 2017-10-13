@@ -1,0 +1,14 @@
+---
+title: Ashwin Vaswani - Home
+layout: home
+---
+
+.intro
+  %h1=t('index.heading')
+  %p=t('index.bio', job_title: t('index.job_title'), href_company: link_to(t('index.company'), 'https://kadenze.com', target: '_blank'), href_undergrad: link_to(t('index.undergrad'), 'https://calarts.edu', target: '_blank'), href_metier: link_to(t('index.metier'), 'http://mtiid.calarts.edu', target: '_blank'), href_repo: link_to(t('index.here'), 'https://github.com/ashwinv11/website', target: '_blank'))
+
+.flex-boxes
+  #p5.flex-box
+  .about-text.flex-box
+    %h1=t('index.about')
+    %p=t('index.artist_statement')
