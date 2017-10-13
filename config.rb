@@ -24,16 +24,11 @@ activate :external_pipeline,
          latency: 1
 
 set :css_dir, 'assets/stylesheets'
-set :js_dir, 'assets/javascript'
+set :js_dir, 'assets/javascripts'
 set :images_dir, 'assets/images'
 
 # With alternative layout
 # page "/path/to/file.html", layout: :otherlayout
-
-# set :css_dir, 'stylesheets'
-# set :fonts_dir,  "fonts"
-# set :js_dir, 'javascripts'
-# set :images_dir, 'images'
 
 # With alternative layout
 # page "/path/to/file.html", layout: :otherlayout
