@@ -2,6 +2,7 @@
 en:
   common:
     here: here
+    date_default: '%b %e, %Y'
   nav:
     home: home
     resume: resume

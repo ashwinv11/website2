@@ -52,6 +52,7 @@ activate :blog do |blog|
   blog.permalink = 'projects/{title}.html'
 
   blog.default_extension = '.haml'
+  blog.layout = 'project'
   # blog.paginate = true
   # blog.per_page = 10
   # blog.page_link = 'page/{num}'
