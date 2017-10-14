@@ -32,6 +32,6 @@
     = javascript_include_tag 'all.bundle', async: true
   %body{class: page_classes}
     = partial "partials/nav"
-    #main{role: "main"}
+    %main{role: "main"}
       = yield
     = partial "partials/footer"
