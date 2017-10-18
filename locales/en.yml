@@ -10,12 +10,13 @@ en:
     contact: contact
   index:
     heading: Hi, I'm Ashwin!
-    job_title: Web Engineer
-    company: Kadenze
-    undergrad: CalArts
+    job_title_1: Web Engineer
+    job_title_2: Adjunct Faculty
+    company_1: Kadenze
+    company_2: CalArts
     metier: Music Technology
     bio: |
-      %{job_title} at %{href_company}, with a BFA from %{href_undergrad} in %{href_metier} & the Digital Arts.
+      %{job_title_1} at %{href_company_1} & %{job_title_2} at %{href_company_2}, with a BFA in %{href_metier} & the Digital Arts.
       Feel free to explore my website for my work, music, projects, and other random things.
       Oh also, this website is entirely open source, which you can find %{href_repo}.
     about: About
