@@ -24,7 +24,19 @@ h4 {
   font-size: 1rem;
 }
 
-p, span, li {
+p, span, li, time {
   font-family: 'Open Sans';
   font-size: 1rem;
+}
+
+a {
+  color: #D13737;
+}
+
+a:hover, a:focus, a:active {
+  color: black;
+}
+
+i {
+  font-size: 2rem;
 }

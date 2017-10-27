@@ -1,0 +1,42 @@
+/*
+  Base layout styles
+*/
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+nav {
+  padding: 1rem 0;
+  background-color: #292929;
+}
+
+nav ul {
+  display: grid;
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  grid-row: 1;
+  text-align: center;
+}
+
+main {
+  margin: 0 1rem;
+  padding: 2rem;
+  min-height: 80%;
+}
+
+footer {
+  display: grid;
+  text-align: center;
+  padding: 2em;
+  background-color: #C9C9C9;
+}
+
+footer social a {
+  text-decoration: none;
+}
