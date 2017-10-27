@@ -2,8 +2,8 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
   entry: {
-    all: './source/assets/javascripts/all.js',
-    p5: './source/assets/javascripts/homep5.js',
+    ga: './source/assets/javascripts/ga.js',
+    bezier: './source/assets/javascripts/bezier.js',
     contact: './source/assets/javascripts/contact.js'
   },
 

@@ -29,8 +29,9 @@
     %link{href: "https://fonts.googleapis.com/css?family=Fira+Mono|Fira+Sans:300", rel: "stylesheet", type: "text/css"}
     / Font Awesome Icons
     %link{crossorigin: "anonymous", href: "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css", integrity: "sha384-hQpvDQiCJaD2H465dQfA717v7lu5qHWtDbWNPvaTJ0ID5xnPUlVXnKzq7b8YUkbN", rel: "stylesheet"}
+    / Google Captcha
     %script{async: "", defer: "defer", src: "https://www.google.com/recaptcha/api.js"}
-    = javascript_include_tag 'all.bundle', 'contact.bundle', async: true
+    = javascript_include_tag 'ga.bundle', 'contact.bundle', async: true
   %body{class: page_classes}
     = partial "partials/nav"
     %main{role: "main"}
