@@ -1,5 +1,3 @@
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
-
 module.exports = {
   entry: {
     ga: './source/assets/javascripts/ga.js',
@@ -19,9 +17,5 @@ module.exports = {
   output: {
     path: __dirname + '/.tmp/dist',
     filename: 'assets/javascripts/[name].bundle.js',
-  },
-
-  // plugins: [
-  //   new ExtractTextPlugin("assets/stylesheets/[name].bundle.css"),
-  // ],
+  }
 };
