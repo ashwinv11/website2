@@ -27,8 +27,8 @@
     %title= current_page.data.title || "Ashwin Vaswani"
     / Google Web Fonts Fira Mono & Fira Sans
     %link{href: "https://fonts.googleapis.com/css?family=Fira+Mono|Fira+Sans:300", rel: "stylesheet", type: "text/css"}
-    / Font Awesome Icons
-    %link{crossorigin: "anonymous", href: "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css", integrity: "sha384-hQpvDQiCJaD2H465dQfA717v7lu5qHWtDbWNPvaTJ0ID5xnPUlVXnKzq7b8YUkbN", rel: "stylesheet"}
+    / Fontello Icons
+    = stylesheet_link_tag 'fontello', async: true
     = javascript_include_tag 'all.bundle', async: true
   %body{class: page_classes}
     = partial "partials/nav"
