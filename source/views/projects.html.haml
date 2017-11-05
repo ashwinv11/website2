@@ -6,12 +6,14 @@ title: Ashwin Vaswani - Projects
   %span Page #{page_number} of #{num_pages}
   = link_to t("project.prev_page"), prev_page if prev_page
 
-%section
-  - page_articles.each_with_index do |article, i|
-    %h2
-      = link_to article.title, article
+- page_articles.each_with_index do |article, i|
+  = link_to article do
+    %article
+      %h2= article.title
       %time= article.date.strftime(t("common.date_default"))
-      = article.body
+      = tag :img, src: article.data.featured_img, class: 'static-img'
+      / - article.tags.each do |t|
+      /   %span= '//' + t + '//'
 
 - if paginate
   = link_to t("project.next_page"), next_page if next_page
