@@ -14,6 +14,18 @@ module.exports = {
     extensions: ['.js', '.css', '.scss']
   },
 
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader'
+        }
+      }
+    ]
+  },
+
   output: {
     path: __dirname + '/.tmp/dist',
     filename: 'assets/javascripts/[name].bundle.js',
