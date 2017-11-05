@@ -1,3 +1,4 @@
+const Path = require('path');
 const OfflinePlugin = require('offline-plugin');
 
 module.exports = {
@@ -33,7 +34,8 @@ module.exports = {
   ],
 
   output: {
-    path: __dirname + '/.tmp/dist',
-    filename: 'assets/javascripts/[name].bundle.js',
+    path: Path.resolve(__dirname, '.tmp', 'dist'),
+    filename: '[name].bundle.js',
+    publicPath: '/.tmp/dist'
   }
 };
