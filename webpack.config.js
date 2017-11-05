@@ -2,8 +2,8 @@ const OfflinePlugin = require('offline-plugin');
 
 module.exports = {
   entry: {
-    ga: './source/assets/javascripts/ga.js',
-    bezier: './source/assets/javascripts/bezier.js',
+    all: './source/assets/javascripts/all.js',
+    index: './source/assets/javascripts/index.js',
     contact: './source/assets/javascripts/contact.js'
   },
 

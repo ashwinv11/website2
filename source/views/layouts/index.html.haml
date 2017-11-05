@@ -27,7 +27,7 @@
     %title= current_page.data.title || "Ashwin Vaswani"
     / Fontello Icons
     = stylesheet_link_tag 'base', 'typography', 'fontello', async: true
-    = javascript_include_tag 'ga.bundle', 'bezier.bundle', async: true
+    = javascript_include_tag 'all.bundle', 'index.bundle', async: true
   %body{class: page_classes}
     = partial "partials/nav"
     %main{role: "main"}
