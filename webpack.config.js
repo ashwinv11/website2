@@ -35,7 +35,7 @@ module.exports = {
 
   output: {
     path: Path.resolve(__dirname, '.tmp', 'dist'),
-    filename: '[name].bundle.js',
+    filename: '[name]-bundle.js',
     publicPath: '/.tmp/dist'
   }
 };
