@@ -1,3 +1,5 @@
+const OfflinePlugin = require('offline-plugin');
+
 module.exports = {
   entry: {
     ga: './source/assets/javascripts/ga.js',
@@ -25,6 +27,10 @@ module.exports = {
       }
     ]
   },
+
+  plugins: [
+    new OfflinePlugin()
+  ],
 
   output: {
     path: __dirname + '/.tmp/dist',
