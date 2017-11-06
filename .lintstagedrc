@@ -1,3 +1,5 @@
 {
-  "*.js": ["eslint --fix", "git add"]
+  "*.js": ["eslint --fix", "git add"],
+  "*.css": "stylelint",
+  "*.scss": "stylelint --syntax=scss"
 }
