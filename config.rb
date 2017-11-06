@@ -43,9 +43,9 @@ set :images_dir, 'assets/images'
 # General configuration
 
 # Reload the browser automatically whenever files change
-# configure :development do
-#   activate :livereload
-# end
+configure :development do
+  activate :livereload
+end
 
 activate :blog do |blog|
   blog.sources = 'projects/:title.html'
