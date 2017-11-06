@@ -1,6 +1,9 @@
+$clr_nav_bg: $clr_dark_gray;
+
 nav {
+  @include elevation(2);
   padding: 1rem 0;
-  background-color: #292929;
+  background-color: $clr_nav_bg;
 }
 
 nav ul {

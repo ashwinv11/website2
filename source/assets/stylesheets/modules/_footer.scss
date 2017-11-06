@@ -1,8 +1,11 @@
+$clr_footer_bg: $clr_gray;
+
 footer {
+  @include elevation(1);
   display: grid;
   text-align: center;
   padding: 2em;
-  background-color: #C9C9C9;
+  background-color: $clr_footer_bg;
 }
 
 footer a {

@@ -2,13 +2,16 @@
   Projects Page Styles
 */
 
+@import 'global';
+
 .projects_index main {
   display: grid;
   grid: auto-flow 42rem / repeat(2, 42rem);
   grid-gap: 2rem;
 }
 
-.projects {
+.projects article {
+  @include elevation();
   text-align: center;
 }
 
