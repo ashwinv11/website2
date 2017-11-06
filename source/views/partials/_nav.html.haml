@@ -1,10 +1,14 @@
 %nav
   %ul
     %li
-      = link_to t("nav.home"), "index"
+      = link_to "index" do
+        %span=t("nav.home")
     %li
-      = link_to t("nav.resume"), "assets/Vaswani_Ashwin_Technical_Resume.pdf"
+      = link_to "assets/Vaswani_Ashwin_Technical_Resume.pdf" do
+        %span=t("nav.resume")
     %li
-      = link_to t("nav.projects"), "projects"
+      = link_to "projects" do
+        %span=t("nav.projects")
     %li
-      = link_to t("nav.contact"), "contact"
+      = link_to "contact" do
+        %span=t("nav.contact")

@@ -34,7 +34,9 @@ p, span, li, time {
 }
 
 a {
+  @include transition(0.3s);
   color: $clr_accent;
+
   &:hover, &:focus, &:active {
     color: $clr_black;
   }

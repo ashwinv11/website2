@@ -6,13 +6,28 @@
 
 .projects_index main {
   display: grid;
-  grid: auto-flow 42rem / repeat(2, 42rem);
+  grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
   grid-gap: 2rem;
 }
 
-.projects article {
-  @include elevation();
-  text-align: center;
+.project-card__container {
+  text-decoration: none;
+
+  &:hover, &:active, &:focus {
+    .project-card {
+      @include elevation(2);
+    }
+  }
+}
+
+.project-card {
+  @include elevation(1);
+  @include transition(0.3s);
+  height: 100%;
+}
+
+.project-card__info {
+  padding: 0 1rem 1rem;
 }
 
 .static-img {

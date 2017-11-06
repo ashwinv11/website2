@@ -6,9 +6,8 @@ footer {
   text-align: center;
   padding: 2em;
   background-color: $clr_footer_bg;
-}
 
-footer a {
-  transition: all 1s ease-in-out;
-  text-decoration: none;
+  a {
+    text-decoration: none;
+  }
 }

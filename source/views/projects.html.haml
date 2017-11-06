@@ -8,13 +8,14 @@ layout: projects
   = link_to t("project.prev_page"), prev_page if prev_page
 
 - page_articles.each_with_index do |article, i|
-  = link_to article do
-    %article
-      %h2= article.title
-      %time= article.date.strftime(t("common.date_default"))
+  = link_to article, class: 'project-card__container' do
+    %article.project-card
       = tag :img, src: article.data.featured_img, class: 'static-img'
-      / - article.tags.each do |t|
-      /   %span= '//' + t + '//'
+      .project-card__info
+        %h3= article.title
+        %time= article.date.strftime(t("common.date_default"))
+        / - article.tags.each do |t|
+        /   %span= '//' + t + '//'
 
 - if paginate
   = link_to t("project.next_page"), next_page if next_page
