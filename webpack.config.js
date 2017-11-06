@@ -1,4 +1,5 @@
 const Path = require('path');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const OfflinePlugin = require('offline-plugin');
 
@@ -20,7 +21,7 @@ module.exports = {
       __dirname + '/assets/fonts',
       __dirname + '/node_modules',
     ],
-    extensions: ['.js', '.css', '.scss']
+    extensions: ['.js', '.scss']
   },
 
   module: {
@@ -33,10 +34,10 @@ module.exports = {
         }
       },
       {
-        test: /\.(svg|ttf|eot|woff|woff2)$/,
+        test: /\.(woff|woff2)$/,
         loader: 'file-loader',
         options: {
-          name: 'fonts/[name].[ext]',
+          name: 'fonts/[name].[ext]'
         }
       },
       {
@@ -50,12 +51,13 @@ module.exports = {
 
   plugins: [
     extractPlugin,
-    new OfflinePlugin()
+    new OfflinePlugin(),
+    new CleanWebpackPlugin(['.tmp/dist'])
   ],
 
   output: {
     path: Path.resolve(__dirname, '.tmp', 'dist'),
     filename: '[name]-bundle.js',
-    publicPath: '/.tmp/dist/'
+    publicPath: '.tmp/dist/'
   }
 };

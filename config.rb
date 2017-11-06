@@ -74,10 +74,12 @@ activate :directory_indexes
 # Build-specific configuration
 configure :build do
   # Ignore asset building so Webpack has control
-  ignore { |path| path =~ /\/(.*)\.js|scss|woff|woff2$/ }
+  ignore { |path| path =~ /\/(.*)\.js|scss$/ }
 
   # Hash assets
-  activate :asset_hash
+  activate :asset_hash do |a|
+    a.ignore = [/\/(.*)\.woff|woff2$/]
+  end
 
   # Zip it
   activate :gzip
