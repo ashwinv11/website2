@@ -4,24 +4,15 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const OfflinePlugin = require('offline-plugin');
 
 const extractPlugin = new ExtractTextPlugin({
-  filename: 'main.css'
+  filename: '[name].css'
 });
 
 module.exports = {
   entry: {
-    all: './source/assets/javascripts/all.js',
+    global: './source/assets/javascripts/global.js',
     index: './source/assets/javascripts/index.js',
+    projects: './source/assets/javascripts/projects.js',
     contact: './source/assets/javascripts/contact.js'
-  },
-
-  resolve: {
-    modules: [
-      __dirname + '/assets/javascripts',
-      __dirname + '/assets/stylesheets',
-      __dirname + '/assets/fonts',
-      __dirname + '/node_modules',
-    ],
-    extensions: ['.js', '.scss']
   },
 
   module: {
