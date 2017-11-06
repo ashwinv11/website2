@@ -78,7 +78,7 @@ configure :build do
 
   # Hash assets
   activate :asset_hash do |a|
-    a.ignore = [/\/(.*)\.woff|woff2$/]
+    a.ignore = [/\/(.*)\.woff|woff2$/, /sw.js/]
   end
 
   # Zip it
