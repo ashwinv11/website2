@@ -11,7 +11,9 @@
 }
 
 .project-card__container {
-  text-decoration: none;
+  &:before {
+    display: none;
+  }
 
   &:hover, &:active, &:focus {
     .project-card {
@@ -22,7 +24,7 @@
 
 .project-card {
   @include elevation(1);
-  @include transition(0.3s);
+  @include transition(0.2s);
   border-radius: 2px;
   height: 100%;
 }

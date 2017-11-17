@@ -7,7 +7,7 @@ footer {
   padding: 2em;
   background-color: $clr_footer_bg;
 
-  a {
-    text-decoration: none;
+  a:before {
+    display: none;
   }
 }

@@ -9,18 +9,18 @@ const sketch = new p5(p => {
 
   p.setup = () => {
     const myCanvas = p.createCanvas(width, height);
-    myCanvas.parent('p5');
+    myCanvas.parent('bezier');
     myCanvas.mousePressed(resetDraw);
     myCanvas.touchStarted(resetDraw);
     myCanvas.touchEnded(resetDraw);
-    p.background(242, 242, 242);
+    p.background(255, 255, 255);
     p.stroke(209, 55, 55, 25);
     p.noFill();
   };
 
   const resetDraw = () => {
     colorSwitch = !colorSwitch;
-    p.background(242, 242, 242);
+    p.background(255, 255, 255);
     frameCount = 0;
   };
 

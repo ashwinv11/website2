@@ -29,9 +29,10 @@
     = javascript_include_tag 'global-bundle', async: true
   %body{class: page_classes}
     = partial "partials/nav"
-    %main{role: "main"}
-      %h1= current_article.title
-      %time= current_article.date.strftime(t("common.date_default"))
+    %main{role: "main", class: "project"}
+      %header.project__meta
+        %h1= current_article.title
+        %time= current_article.date.strftime(t("common.date_default"))
       %article
         = yield
     = partial "partials/footer"
