@@ -10,7 +10,7 @@ layout: projects
 - page_articles.each_with_index do |article, i|
   = link_to article, class: 'project-card__container' do
     %article.project-card
-      = tag :img, src: article.data.featured_img, class: 'project__card-img'
+      = tag :img, src: article.data.featured_img, alt: article.data.featured_img_alt, class: 'project__card-img'
       .project-card__info
         %h3= article.title
         %time= article.date.strftime(t("common.date_default"))

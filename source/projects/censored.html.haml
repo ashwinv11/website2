@@ -3,6 +3,7 @@ title: censored
 date: 2016-05-11 14:46 PDT
 tags: programming web data
 featured_img: "/assets/images/censored-featured.jpg"
+featured_img_alt: "Printed papers of raw JSON data showing sexual assault statistics in India"
 ---
 
 %iframe.youtube{allowfullscreen: "", frameborder: "0", height: "480", src: "https://www.youtube-nocookie.com/embed/UGsyOfj2iNM?rel=0&controls=0&showinfo=0", width: "640"}
@@ -10,4 +11,4 @@ featured_img: "/assets/images/censored-featured.jpg"
 %p=t("project.censored.repo", href: link_to(t("common.here"), "https://github.com/ashwinv11/censored", target: "_blank"))
 %p=t("project.censored.paper", href: link_to(t("common.here"), "assets/censored.pdf", target: "_blank"))
 
-= tag :img, src: "/assets/images/censored-featured.jpg", class: "static-img"
+= tag :img, src: "/assets/images/censored-featured.jpg", alt: current_article.data.featured_img_alt, class: "static-img"
