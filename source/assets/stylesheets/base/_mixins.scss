@@ -8,6 +8,14 @@
   @else if $level == 0  { box-shadow: 0 0px 0px rgba(0,0,0,0), 0 0px 0px rgba(0,0,0,0); }
 }
 
-@mixin transition( $time, $type: ease-in-out ) {
+@mixin transition($time, $type: ease-in-out) {
   transition: all $time $type;
+}
+
+@mixin alpha-attribute($attribute, $color, $background) {
+  $percent: alpha($color) * 100%;
+  $opaque: opacify($color, 1);
+  $solid-color: mix($opaque, $background, $percent);
+  #{$attribute}: $solid-color;
+  #{$attribute}: $color;
 }

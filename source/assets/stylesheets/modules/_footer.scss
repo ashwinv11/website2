@@ -7,7 +7,10 @@ footer {
   padding: 2em;
   background-color: $clr_footer_bg;
 
-  a:before {
-    display: none;
+  a {
+    box-shadow: none;
+    &:hover, &:focus, &:active {
+      box-shadow: none;
+    }
   }
 }

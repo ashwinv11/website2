@@ -11,9 +11,7 @@
 }
 
 .project-card__container {
-  &:before {
-    display: none;
-  }
+  box-shadow: none;
 
   &:hover, &:active, &:focus {
     .project-card {

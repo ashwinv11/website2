@@ -47,26 +47,10 @@ a {
   position: relative;
   text-decoration: none;
   color: $clr_accent;
-
-  &:before {
-    @include transition(0.2s);
-    background: $clr_accent;
-    opacity: 0.2;
-    content: "";
-    display: block;
-    height: .33em;
-    position: absolute;
-    bottom: 0;
-    left: -.5rem;
-    right: -.5rem;
-  }
+  box-shadow: inset 0 -0.4rem 0 0 $clr_link_underline;
 
   &:hover, &:focus, &:active {
     color: $clr_black;
-
-    &:before {
-      opacity: 0.6;
-      height: .22em;
-    }
+    box-shadow: inset 0 -0.2rem 0 0 $clr_accent;
   }
 }

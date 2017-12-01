@@ -17,10 +17,6 @@ nav {
   }
 
   ul a {
-    &:before {
-      background: $clr_accent;
-    }
-
     &:hover, &:focus, &:active {
       color: $clr_white;
     }
