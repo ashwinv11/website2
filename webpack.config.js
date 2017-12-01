@@ -11,8 +11,7 @@ module.exports = {
   entry: {
     global: './source/assets/javascripts/global.js',
     index: './source/assets/javascripts/index.js',
-    projects: './source/assets/javascripts/projects.js',
-    contact: './source/assets/javascripts/contact.js'
+    projects: './source/assets/javascripts/projects.js'
   },
 
   module: {
