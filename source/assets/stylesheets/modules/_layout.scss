@@ -25,7 +25,7 @@ main {
 
 .project {
   iframe {
-    max-width: 88vw;
+    max-width: 92vw;
     height: auto;
     @media #{$break-sm-plus} {
       height: 480px;
@@ -33,6 +33,6 @@ main {
   }
 
   .static-img {
-    max-width: 88vw;
+    max-width: 92vw;
   }
 }
