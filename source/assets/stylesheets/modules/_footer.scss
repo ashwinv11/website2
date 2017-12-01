@@ -10,7 +10,12 @@ footer {
   a {
     box-shadow: none;
     &:hover, &:focus, &:active {
+      color: $clr_off_white;
       box-shadow: none;
     }
+  }
+
+  i {
+    text-shadow: 0.2rem 0.4rem $clr_dark_gray;
   }
 }
