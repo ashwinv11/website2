@@ -11,10 +11,28 @@ body {
 }
 
 main {
-  margin: 2rem;
+  margin: 1rem;
   min-height: 60vmin;
+
+  @media #{$break-sm-plus} {
+    margin: 2rem;
+  }
 }
 
 .project__meta {
   margin-bottom: 2rem;
+}
+
+.project {
+  iframe {
+    max-width: 88vw;
+    height: auto;
+    @media #{$break-sm-plus} {
+      height: 480px;
+    }
+  }
+
+  .static-img {
+    max-width: 88vw;
+  }
 }

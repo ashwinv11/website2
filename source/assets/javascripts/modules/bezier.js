@@ -1,8 +1,8 @@
 import p5 from 'p5';
 
 const sketch = new p5(p => {
-  let width = 380;
-  let height = 380;
+  let width = 320;
+  let height = 320;
   let colorSwitch = false;
   let frameCount = 0;
   let t = 0;

@@ -11,6 +11,7 @@
 }
 
 .project-card__container {
+  max-width: 88vw;
   box-shadow: none;
 
   &:hover, &:active, &:focus {
@@ -35,3 +36,4 @@
   border-radius: 2px 2px 0px 0px;
   max-width: 100%;
 }
+
