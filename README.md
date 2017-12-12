@@ -1,10 +1,10 @@
-## Synopsis
+## Overview
 
 Repository for [ashwinvaswani.com](https://ashwinvaswani.com). Please don't hack me :)
 
 ## Installation
 
-This site runs on [Middleman](https://middlemanapp.com/). Follow the install guide found here: https://middlemanapp.com/basics/install/
+This site is built on [Tadka](https://github.com/ashwinv11/tadka). Follow the install guide found there.
 
 ## MIT License
 
