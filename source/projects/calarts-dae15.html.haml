@@ -6,6 +6,6 @@ featured_img: "/assets/images/expo15-featured.png"
 featured_img_alt: "Screenshot of CalArts Digital Arts Expo Website 2015"
 ---
 
-= tag :img, src: "/assets/images/expo15-featured.png", alt: current_article.data.featured_img_alt, class: "static-img"
+= tag :img, src: current_article.data.featured_img, alt: current_article.data.featured_img_alt, class: "static-img"
 
 %p=t("project.dae15.about", href: link_to(t("common.here"), "http://expo15.calartsmusictech.com", target: "_blank"))

@@ -11,4 +11,4 @@ featured_img_alt: "Printed papers of raw JSON data showing sexual assault statis
 %p=t("project.censored.repo", href: link_to(t("common.here"), "https://github.com/ashwinv11/censored", target: "_blank"))
 %p=t("project.censored.paper", href: link_to(t("common.here"), "assets/censored.pdf", target: "_blank"))
 
-= tag :img, src: "/assets/images/censored-featured.jpg", alt: current_article.data.featured_img_alt, class: "static-img"
+= tag :img, src: current_article.data.featured_img, alt: current_article.data.featured_img_alt, class: "static-img"
