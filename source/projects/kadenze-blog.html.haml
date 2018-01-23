@@ -1,0 +1,15 @@
+---
+title: Kadenze Blog
+date: 2016-06-22 21:25 PST
+tags: programming web
+featured_img: "/assets/images/kadblog-featured.png"
+featured_img_alt: "Screenshot of Kadenze Blog Website 2017"
+---
+
+= tag :img, src: current_article.data.featured_img, alt: current_article.data.featured_img_alt, class: "static-img"
+
+%p=t("project.kadblog.intro")
+
+%p=t("project.kadblog.development", href: link_to(t("project.kadblog.wordpress_blog"), "https://blog.kadenze.com", target: "_blank"), theme_href: link_to(t("project.kadblog.theme"), "https://undsgn.com/uncode/", target: "_blank"))
+
+%p=t("project.kadblog.deployment")

@@ -69,5 +69,22 @@ en:
         but you also see a digital representation of yourself. This breaks down the dichotomy between
         the physical and digital world, creating another reality. Wave your hands and make some noise
         to see your reflection change.
+    kadblog:
+      wordpress_blog: Wordpress blog
+      theme: Uncode
+      intro: |
+        Kadenze brings together educators, artists, and engineers from leading universities across the globe
+        to provide world-class education in the fields of art and creative technology.
+      development: |
+        I lead development on the company's %{href}. Over the years it has gone through 3 major
+        design iterations and has migrated between hosting providers. As lead developer, I implemented
+        the design team's vision on each page. I developed a custom theme built ontop of the %{theme_href} template.
+        I wrote backend code to track the user's visited blog categories, so that our web app's API could show users
+        relevant courses based on their reading interests. I developed an email tracking system using Sendgrid's API.
+      deployment: |
+        Besides development, I also provisioned servers, created staging enviornments, added version control via Git,
+        documented our development and deployment process, and installed a CDN and SSL using Let's Encrypt. I also
+        reworked our asset loading and database queries, helping improve performance. This, coupled with switching
+        our hosting providers, helped bring down the Time to First Interactive (TTFI) by up to 600%.
   footer:
     copyright: Copyright © %{year} Ashwin Vaswani
