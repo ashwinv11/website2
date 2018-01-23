@@ -43,6 +43,10 @@ en:
       about: |
         I also leaded development on the website for CalArts' Digital Arts Expo for 2016.
         This was also created in Wordpress. Check it out %{href}.
+    dae17:
+      about: |
+        I leaded development on the website for CalArts' Digital Arts Expo for 2017.
+        This was also created in Wordpress. Check it out %{href}.
     censored:
       intro: |
         Censored is an interactive website that visualizes statistics on sexual assault and rape cases in India.
