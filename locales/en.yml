@@ -9,13 +9,16 @@ en:
     projects: projects
   index:
     heading: Hi, I'm Ashwin!
-    job_title_1: Web Engineer
+    job_title_1: Software Engineer
     job_title_2: Adjunct Faculty
-    company_1: Kadenze
+    old_job_title: Web Engineer
+    company_1: Philosophie
     company_2: CalArts
+    old_company: Kadenze
     metier: Music Technology
     bio: |
       %{job_title_1} at %{href_company_1} & %{job_title_2} at %{href_company_2}, with a BFA in %{href_metier} & the Digital Arts.
+      Previously %{old_job_title} at %{href_old_company}.
       Feel free to explore my website for my projects, music, and other work.
       Oh also, this website is entirely open source, which you can find %{href_repo}.
     about: About
