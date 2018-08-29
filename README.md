@@ -1,3 +1,7 @@
+# DEPRECATED
+
+New website repo: https://github.com/ashwinv11/website
+
 ## Overview
 
 Repository for [ashwinvaswani.com](https://ashwinvaswani.com). Please don't hack me :)
